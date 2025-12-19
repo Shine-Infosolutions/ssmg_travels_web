@@ -1241,8 +1241,10 @@
                             <p class="text-theme small fw-bold mb-0">Heritage India Specialist</p>
                         </div>
                         <div class="p-4 bg-white">
+                            <div id="formMessage" style="display: none; margin-bottom: 15px;"></div>
                             <form id="ssmgBookingForm" action="https://api.web3forms.com/submit" method="POST">
                                 <input type="hidden" name="access_key" value="359e5bba-ed19-442c-8cea-168eb0039b5c">
+                                <input type="hidden" name="subject" value="New Booking Inquiry - 8 Days India Tour">
                                 <div class="mb-3">
                                     <input type="text" name="name" class="form-control py-3 rounded-3 shadow-none border-light" placeholder="Your Full Name" required style="background: #f8f9fa;">
                                 </div>
@@ -1250,13 +1252,13 @@
                                     <input type="tel" name="phone" class="form-control py-3 rounded-3 shadow-none border-light" placeholder="WhatsApp Number" required style="background: #f8f9fa;">
                                 </div>
                                 <div class="mb-3">
-                                    <select name="vehicle" class="form-select py-3 rounded-3 shadow-none border-light" style="background: #f8f9fa;">
-                                        <option selected disabled>Preferred Vehicle Type</option>
-                                        <option>Swift Dzire (4 Seater)</option>
-                                        <option>Innova Crysta (7 Seater)</option>
-                                        <option>Scorpio / Bolero</option>
-                                        <option>Tempo Traveller (13-26 Seater)</option>
-                                        <option>AC Bus / Tourist Bus</option>
+                                    <select name="vehicle" class="form-select py-3 rounded-3 shadow-none border-light" required style="background: #f8f9fa;">
+                                        <option value="" selected disabled>Preferred Vehicle Type</option>
+                                        <option value="Swift Dzire (4 Seater)">Swift Dzire (4 Seater)</option>
+                                        <option value="Innova Crysta (7 Seater)">Innova Crysta (7 Seater)</option>
+                                        <option value="Scorpio / Bolero">Scorpio / Bolero</option>
+                                        <option value="Tempo Traveller (13-26 Seater)">Tempo Traveller (13-26 Seater)</option>
+                                        <option value="AC Bus / Tourist Bus">AC Bus / Tourist Bus</option>
                                     </select>
                                 </div>
                                 <button type="submit" class="vs-btn style9 w-100 py-3 rounded-3 shadow-lg" style="background: linear-gradient(135deg, #ff5e00 0%, #ff9100 100%); border:none;">Get Best Quote</button>

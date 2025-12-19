@@ -1229,8 +1229,10 @@
                             <p class="text-theme small fw-bold mb-0">Nepal Tour Specialist from Gorakhpur</p>
                         </div>
                         <div class="p-4 bg-white">
+                            <div id="formMessage" style="display: none; margin-bottom: 15px;"></div>
                             <form id="ssmgBookingForm" action="https://api.web3forms.com/submit" method="POST">
                                 <input type="hidden" name="access_key" value="359e5bba-ed19-442c-8cea-168eb0039b5c">
+                                <input type="hidden" name="subject" value="5 Days Kathmandu Pokhara Tour Booking">
                                 <div class="mb-3">
                                     <input type="text" name="name" class="form-control py-3 rounded-3 shadow-none border-light" placeholder="Your Full Name" required style="background: #f8f9fa;">
                                 </div>
@@ -1238,13 +1240,13 @@
                                     <input type="tel" name="phone" class="form-control py-3 rounded-3 shadow-none border-light" placeholder="WhatsApp Number" required style="background: #f8f9fa;">
                                 </div>
                                 <div class="mb-3">
-                                    <select name="vehicle" class="form-select py-3 rounded-3 shadow-none border-light" style="background: #f8f9fa;">
-                                        <option selected disabled>Preferred Vehicle Type</option>
-                                        <option>Swift Dzire (4 Seater)</option>
-                                        <option>Innova Crysta (7 Seater)</option>
-                                        <option>Scorpio / Bolero</option>
-                                        <option>Tempo Traveller (13-26 Seater)</option>
-                                        <option>AC Bus / Tourist Bus</option>
+                                    <select name="vehicle" class="form-select py-3 rounded-3 shadow-none border-light" required style="background: #f8f9fa;">
+                                        <option value="" selected disabled>Preferred Vehicle Type</option>
+                                        <option value="Swift Dzire (4 Seater)">Swift Dzire (4 Seater)</option>
+                                        <option value="Innova Crysta (7 Seater)">Innova Crysta (7 Seater)</option>
+                                        <option value="Scorpio / Bolero">Scorpio / Bolero</option>
+                                        <option value="Tempo Traveller (13-26 Seater)">Tempo Traveller (13-26 Seater)</option>
+                                        <option value="AC Bus / Tourist Bus">AC Bus / Tourist Bus</option>
                                     </select>
                                 </div>
                                 <button type="submit" class="vs-btn style9 w-100 py-3 rounded-3 shadow-lg" style="background: linear-gradient(135deg, #ff5e00 0%, #ff9100 100%); border:none;">Get Best Quote</button>
@@ -1583,15 +1585,31 @@
     
     <script>
     document.addEventListener('DOMContentLoaded', function() {
-        // Form submission functionality
         const form = document.getElementById('ssmgBookingForm');
         const messageDiv = document.getElementById('formMessage');
+        
+        if (!form || !messageDiv) {
+            console.error('Form or message div not found');
+            return;
+        }
         
         form.addEventListener('submit', function(e) {
             e.preventDefault();
             
+            const name = this.querySelector('input[name="name"]').value.trim();
+            const phone = this.querySelector('input[name="phone"]').value.trim();
+            const vehicle = this.querySelector('select[name="vehicle"]').value;
+            
+            if (!name || !phone || !vehicle) {
+                messageDiv.innerHTML = '<div class="p-3 rounded-3" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: white;"><i class="fas fa-exclamation-triangle me-2"></i><strong>Please fill all fields!</strong></div>';
+                messageDiv.style.display = 'block';
+                setTimeout(() => messageDiv.style.display = 'none', 3000);
+                return;
+            }
+            
             const formData = new FormData(this);
             const button = this.querySelector('button[type="submit"]');
+            const originalText = button.textContent;
             
             button.disabled = true;
             button.textContent = 'Sending...';
@@ -1601,35 +1619,34 @@
                 method: 'POST',
                 body: formData
             })
-            .then(response => response.json())
+            .then(response => response.ok ? response.json() : Promise.reject('Network error'))
             .then(data => {
                 if (data.success) {
-                    messageDiv.innerHTML = '<div class="p-3 rounded-3" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; box-shadow: 0 4px 12px rgba(16,185,129,0.3);"><i class="fas fa-check-circle me-2"></i><strong>Success!</strong> Booking request sent. We will contact you within 15 minutes.</div>';
+                    messageDiv.innerHTML = '<div class="p-3 rounded-3" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white;"><i class="fas fa-check-circle me-2"></i><strong>Success!</strong> We will contact you within 15 minutes.</div>';
                     messageDiv.style.display = 'block';
                     this.reset();
-                    setTimeout(() => {
-                        messageDiv.style.display = 'none';
-                    }, 3000);
+                    setTimeout(() => messageDiv.style.display = 'none', 5000);
                 } else {
-                    messageDiv.innerHTML = '<div class="p-3 rounded-3" style="background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); color: white; box-shadow: 0 4px 12px rgba(239,68,68,0.3);"><i class="fas fa-exclamation-circle me-2"></i><strong>Error!</strong> Please call +917380708008</div>';
-                    messageDiv.style.display = 'block';
-                    setTimeout(() => {
-                        messageDiv.style.display = 'none';
-                    }, 3000);
+                    throw new Error('Submission failed');
                 }
             })
             .catch(() => {
-                messageDiv.innerHTML = '<div class="p-3 rounded-3" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: white; box-shadow: 0 4px 12px rgba(245,158,11,0.3);"><i class="fas fa-wifi me-2"></i><strong>Network Error!</strong> Please call +917380708008</div>';
+                messageDiv.innerHTML = '<div class="p-3 rounded-3" style="background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); color: white;"><i class="fas fa-exclamation-circle me-2"></i><strong>Error!</strong> Please call +917380708008</div>';
                 messageDiv.style.display = 'block';
-                setTimeout(() => {
-                    messageDiv.style.display = 'none';
-                }, 3000);
+                setTimeout(() => messageDiv.style.display = 'none', 5000);
             })
             .finally(() => {
                 button.disabled = false;
-                button.textContent = 'Get Best Quote';
+                button.textContent = originalText;
             });
         });
+        
+        const phoneInput = form.querySelector('input[name="phone"]');
+        if (phoneInput) {
+            phoneInput.addEventListener('input', function() {
+                this.value = this.value.replace(/[^0-9+]/g, '');
+            });
+        }
     });
     </script>
   </body>
