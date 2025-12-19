@@ -1,0 +1,1630 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+  
+<!-- Mirrored from html.vecurosoft.com/tripix/tripix-demo/destination-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Dec 2025 05:40:54 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="author" content="https://vecuro.com/" />
+    <title>
+      Tripix - Tours & Travels HTML5 Template | Vecuro | Destination Details
+    </title>
+
+    <meta
+      name="description"
+      content="Tripix - Tours & Travels HTML5 Template, a stunning and feature-rich solution for travel agencies and tour operators."
+    />
+    <meta
+      name="keywords"
+      content="Tripix, Tours and Travels, HTML5 Template, Vecuro, Travel Agency Template, Tour Operator Template "
+    />
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="developer" content="Md Kaium Hossain" />
+
+    <!-- Mobile Specific Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Favicons - Place favicon.ico in the root directory -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="assets/img/favicons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="assets/img/favicons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="assets/img/favicons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="assets/img/favicons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="assets/img/favicons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="assets/img/favicons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="assets/img/favicons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="assets/img/favicons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/img/favicons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="assets/img/favicons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/img/favicons/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="assets/img/favicons/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#fff" />
+    <!--=================
+	  Google Fonts
+	================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&amp;family=Bricolage+Grotesque:opsz,wght@12..96,200..800&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Rubik:ital,wght@0,300..900;1,300..900&amp;family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!--=================
+	    All CSS File
+	================= -->
+    <!-- plugins -->
+    <link rel="stylesheet" href="assets/css/plugins.css" />
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+<style>
+      @media (min-width: 991px) and (max-width: 1199px) {
+        .vs-header .header-wc.style2 {
+          display: none !important;
+        }
+      }
+      
+      /* Premium UI Styling */
+      .vs-destination-single {
+        font-family: 'Inter', sans-serif;
+        background: transparent;
+        border-radius: 0;
+        padding: 0;
+        box-shadow: none;
+        border: none;
+        margin-bottom: 0;
+      }
+      
+      .destination-single-title {
+        font-family: 'Inter', sans-serif !important;
+        background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: 800;
+      }
+      
+      .destination-single-img {
+        border-radius: 20px !important;
+        overflow: hidden;
+        position: relative;
+      }
+      
+      .destination-single-img::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.1) 100%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      
+      .destination-single-img:hover::after {
+        opacity: 1;
+      }
+      
+      .vs-btn {
+        font-family: 'Inter', sans-serif !important;
+        background: linear-gradient(135deg, #ff5e00 0%, #ff8c42 100%) !important;
+        border: none !important;
+        border-radius: 25px !important;
+        padding: 12px 24px !important;
+        font-weight: 600 !important;
+        box-shadow: 0 4px 16px rgba(255,94,0,0.3) !important;
+        transition: all 0.3s ease !important;
+      }
+      
+      .vs-btn:hover {
+        transform: translateY(-2px) !important;
+        box-shadow: 0 8px 24px rgba(255,94,0,0.4) !important;
+      }
+      
+      .widget {
+        font-family: 'Inter', sans-serif;
+        background: linear-gradient(145deg, rgba(255,255,255,0.9) 0%, rgba(248,250,252,0.8) 100%) !important;
+        backdrop-filter: blur(15px);
+        border: 1px solid rgba(255,255,255,0.2) !important;
+        border-radius: 16px !important;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.04) !important;
+        transition: all 0.3s ease;
+        margin-bottom: 20px;
+      }
+      
+      .widget:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 32px rgba(0,0,0,0.1) !important;
+      }
+      
+      .itinerary-timeline-wrap .p-4 {
+        background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,252,0.9) 100%) !important;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,94,0,0.1) !important;
+        border-left: 3px solid #ff5e00 !important;
+        border-radius: 12px !important;
+        transition: all 0.3s ease;
+        margin-bottom: 16px;
+      }
+      
+      .itinerary-timeline-wrap .p-4:hover {
+        transform: translateX(8px);
+        box-shadow: 0 8px 24px rgba(255,94,0,0.15);
+      }
+      
+      .nav-tabs .nav-link {
+        background: rgba(255,255,255,0.8) !important;
+        border: 1px solid rgba(255,94,0,0.2) !important;
+        color: #64748b !important;
+        font-weight: 600 !important;
+        transition: all 0.3s ease !important;
+      }
+      
+      .nav-tabs .nav-link.active {
+        background: linear-gradient(135deg, #ff5e00 0%, #ff8c42 100%) !important;
+        color: white !important;
+        border-color: #ff5e00 !important;
+        box-shadow: 0 4px 12px rgba(255,94,0,0.3) !important;
+      }
+      
+      .border-radius-15 {
+        border-radius: 16px !important;
+      }
+      
+      .border-radius-20 {
+        border-radius: 20px !important;
+      }
+      
+      .shadow-lg {
+        box-shadow: 0 12px 32px rgba(0,0,0,0.1) !important;
+      }
+      
+      .bg-white {
+        background: linear-gradient(145deg, rgba(255,255,255,0.95) 0%, rgba(248,250,252,0.9) 100%) !important;
+        backdrop-filter: blur(10px);
+      }
+      
+      .container {
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+      }
+      
+      .about-ssmg {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+      }
+      
+      @media (max-width: 768px) {
+        .container {
+          padding-left: 25px !important;
+          padding-right: 25px !important;
+        }
+      }
+      
+      /* Form Field Normal Alignment */
+      .form-control, .form-select {
+        text-align: left !important;
+        padding-left: 16px !important;
+      }
+      
+      .form-control::placeholder {
+        text-align: left !important;
+      }
+      
+      .form-select {
+        padding-left: 16px !important;
+      }
+      
+      /* Premium Enhancements */
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+      }
+      
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      .destination-single-img img {
+        transition: transform 0.5s ease;
+      }
+      
+      .destination-single-img:hover img {
+        transform: scale(1.05);
+      }
+      
+      .col-md-3.col-6 > div {
+        animation: fadeInUp 0.6s ease forwards;
+        opacity: 0;
+      }
+      
+      .col-md-3.col-6:nth-child(1) > div { animation-delay: 0.1s; }
+      .col-md-3.col-6:nth-child(2) > div { animation-delay: 0.2s; }
+      .col-md-3.col-6:nth-child(3) > div { animation-delay: 0.3s; }
+      .col-md-3.col-6:nth-child(4) > div { animation-delay: 0.4s; }
+      
+      .widget {
+        animation: float 3s ease-in-out infinite;
+      }
+      
+      .itinerary-timeline-wrap .p-4 {
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .itinerary-timeline-wrap .p-4::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255,94,0,0.1), transparent);
+        transition: left 0.5s ease;
+      }
+      
+      .itinerary-timeline-wrap .p-4:hover::before {
+        left: 100%;
+      }
+      
+      .vs-btn {
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .vs-btn::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.3);
+        transform: translate(-50%, -50%);
+        transition: width 0.6s, height 0.6s;
+      }
+      
+      .vs-btn:hover::before {
+        width: 300px;
+        height: 300px;
+      }
+      
+      .floating-book-btn {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 999;
+        animation: float 2s ease-in-out infinite;
+        box-shadow: 0 10px 40px rgba(255,94,0,0.4) !important;
+      }
+      
+      @media (max-width: 768px) {
+        .floating-book-btn {
+          bottom: 20px;
+          right: 20px;
+        }
+      }
+      
+      .nav-tabs .nav-link {
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .nav-tabs .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 3px;
+        background: #ff5e00;
+        transform: translateX(-50%);
+        transition: width 0.3s ease;
+      }
+      
+      .nav-tabs .nav-link:hover::after {
+        width: 80%;
+      }
+      
+      .nav-tabs .nav-link.active::after {
+        width: 100%;
+      }
+      
+      /* Premium Info Cards */
+      .premium-info-card {
+        background: linear-gradient(145deg, rgba(255,255,255,0.95) 0%, rgba(248,250,252,0.9) 100%);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255,255,255,0.3);
+        border-radius: 24px;
+        padding: 32px 20px;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.06);
+      }
+      
+      .premium-info-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #ff5e00, #ff8c42, #ffb366);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.4s ease;
+      }
+      
+      .premium-info-card:hover {
+        transform: translateY(-8px) scale(1.02);
+        box-shadow: 0 20px 60px rgba(255,94,0,0.15);
+        border-color: rgba(255,94,0,0.2);
+      }
+      
+      .premium-info-card:hover::before {
+        transform: scaleX(1);
+      }
+      
+      .icon-wrapper {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 20px;
+        background: linear-gradient(135deg, #ff5e00 0%, #1c1816 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 8px 24px rgba(255,94,0,0.3);
+      }
+      
+      .icon-wrapper::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
+        transform: rotate(45deg);
+        transition: all 0.6s ease;
+        opacity: 0;
+      }
+      
+      .premium-info-card:hover .icon-wrapper::before {
+        opacity: 1;
+        transform: rotate(45deg) translate(50%, 50%);
+      }
+      
+      .icon-wrapper i {
+        font-size: 32px;
+        color: white;
+        z-index: 2;
+        position: relative;
+      }
+      
+      .info-label {
+        display: block;
+        font-size: 14px;
+        color: #64748b;
+        font-weight: 500;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+      
+      .info-value {
+        font-size: 18px;
+        font-weight: 700;
+        color: #1e293b;
+        margin: 0;
+        line-height: 1.2;
+      }
+      
+      @media (max-width: 768px) {
+        .premium-info-card {
+          padding: 24px 16px;
+        }
+        
+        .icon-wrapper {
+          width: 60px;
+          height: 60px;
+          margin-bottom: 16px;
+        }
+        
+        .icon-wrapper i {
+          font-size: 24px;
+        }
+        
+        .info-value {
+          font-size: 16px;
+        }
+        
+        .premium-gallery-item img {
+          height: 160px !important;
+        }
+      }
+      
+      /* Premium Gallery Styling */
+      .premium-gallery-item {
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+      }
+      
+      .premium-gallery-item:hover {
+        transform: translateY(-4px);
+        border-color: #ff5e00;
+        box-shadow: 0 15px 35px rgba(255,94,0,0.2) !important;
+      }
+      
+      .premium-gallery-item:hover img {
+        transform: scale(1.05);
+      }
+      
+      .premium-gallery-item:hover .gallery-overlay {
+        opacity: 1 !important;
+      }
+      
+      /* Premium Header Card Animations */
+      @keyframes shine {
+        0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+        50% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        100% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+      }
+      
+      @keyframes float-gentle {
+        0%, 100% { transform: translateY(-4px); }
+        50% { transform: translateY(-8px); }
+      }
+      
+      .premium-header-card {
+        animation: fadeInUp 0.8s ease forwards;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      
+      .premium-header-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 30px 80px rgba(0,0,0,0.12);
+      }
+      
+      .premium-days-badge {
+        animation: float-gentle 4s ease-in-out infinite;
+        transition: all 0.3s ease;
+      }
+      
+      .premium-days-badge:hover {
+        transform: translateY(-8px) scale(1.05);
+        box-shadow: 0 20px 60px rgba(255,94,0,0.5);
+      }
+      
+      .pickup-info-premium:hover .pickup-glow {
+        left: 100%;
+      }
+      
+      .pickup-info-premium {
+        transition: all 0.3s ease;
+      }
+      
+      .pickup-info-premium:hover {
+        transform: translateX(4px);
+        box-shadow: 0 12px 40px rgba(255,94,0,0.2);
+        border-color: rgba(255,94,0,0.3);
+      }
+      
+      /* Mobile Responsive Fixes */
+      @media (max-width: 768px) {
+        .premium-header-card {
+          border-radius: 20px !important;
+          padding: 16px !important;
+          margin-bottom: 20px !important;
+        }
+        
+        .destination-single-title {
+          font-size: clamp(1.2rem, 5vw, 1.8rem) !important;
+          line-height: 1.3 !important;
+        }
+        
+        .premium-days-badge {
+          padding: 10px 14px !important;
+          min-width: 60px !important;
+          border-radius: 18px !important;
+        }
+        
+        .premium-days-badge h3 {
+          font-size: 20px !important;
+        }
+        
+        .premium-days-badge span {
+          font-size: 8px !important;
+          letter-spacing: 0.5px !important;
+        }
+        
+        .pickup-info-premium {
+          padding: 8px 14px !important;
+          font-size: 12px !important;
+          border-radius: 20px !important;
+          text-align: left !important;
+        }
+        
+        .pickup-info-premium span {
+          text-align: left !important;
+          direction: ltr !important;
+        }
+        
+        .pickup-info-premium .icon-wrapper {
+          width: 26px !important;
+          height: 26px !important;
+          margin-right: 8px !important;
+        }
+        
+        .pickup-info-premium .icon-wrapper i {
+          font-size: 10px !important;
+        }
+        
+        .title-underline {
+          width: 40px !important;
+          height: 2px !important;
+          margin-top: 4px !important;
+        }
+        
+        .flex-grow-1 {
+          padding-right: 8px !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="vs-body">
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+    <!--********************************
+   		Code Start From Here 
+	******************************** -->
+    <!--=================
+		Preloader
+	=================-->
+    <div class="preloader">
+      <button class="vs-btn preloaderCls">Cancel Preloader</button>
+      <div class="preloader-inner">
+        <img src="assets/img/logo.svg" alt="logo" />
+        <span class="loader"></span>
+      </div>
+    </div>
+    <!--=================
+		Mobile Menu
+	================= -->
+    <div class="vs-menu-wrapper">
+      <div class="vs-menu-area text-center">
+        <div class="mobile-logo">
+          <a href="index.html"
+            ><img src="assets/img/logo.svg" alt="Carmax" class="logo"
+          /></a>
+          <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
+        </div>
+           <div class="vs-mobile-menu">
+           <ul>
+            <li class="menu-item-has-children">
+              <a href="javascript:void(0)">Home</a>
+             
+            </li>
+            <li class="menu-item-has-children">
+              <a href="javascript:void(0)">Destinations</a>
+               <ul class="sub-menu">
+                <li><a href="Best-3-Days-Pokhara-Tour-Package.html">Nepal(Pokhara)</a></li>
+                <li><a href="Best-3-Days-Kathmandu-Tour-Package.html">Kathamandu</a></li>
+                <li><a href="Best-2-Days-Ayodhya-Tour-Package.html">Ayodhya</a></li>
+              </ul>
+            </li>
+      <li class="menu-item-has-children">
+                      <a href="tour.html">Tours</a>
+                     <ul class="sub-menu">
+                        <li><a href="Best-3-Days-Kathmandu-Tour-Package.html"> Kathmandu Tour </a></li>
+                        <li><a href="Best-3-Days-Pokhara-Tour-Package.html"> Pokhara Tour </a></li>
+                        <li><a href="Best-4-days-Manakamana-Tour-Package.html"> Manakamna Tour</a></li>
+                        <li><a href="best-6-days-muktinath-tour-package.html"> muktinath tour</a></li>
+                        <li><a href="Best-6-days-nepal-tour-package.html"> Nepal Tour</a></li>
+                        <a class="view-more" href="tour.html">View More </a>
+                       
+                      </ul>
+                    </li>
+            <li class="menu-item-has-children">
+              <a href="taxi-services.html">Taxi Services</a>
+             <!--- <ul class="sub-menu">
+                <li><a href="blog.html">Service</a></li>
+                <li><a href="blog-details.html">Service Details</a></li>
+              </ul>-->
+            </li>
+            <li class="menu-item-has-children">
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- =================
+    	Sticky Navbar
+    ================= -->
+    <div id="navbars" class="header-sticky navbars">
+      <div class="container custom-container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-auto col-lg-2">
+            <button class="vs-menu-toggle d-inline-block d-lg-none">
+              <i class="fal fa-bars"></i>
+            </button>
+            <div class="logo d-none d-lg-block">
+              <a href="index.html"
+                ><img src="assets/img/logo.svg" alt="Carmax" class="logo"
+              /></a>
+            </div>
+          </div>
+        <div class="col-xl-auto col-lg-auto col-sm-3 d-none d-sm-block">
+            <nav class="main-menu d-none d-lg-block">
+            <ul>
+                <li class="menu-item-has-children">
+                  <a href="index.html">Home</a>
+         
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="#">Destinations</a>
+                 <ul class="sub-menu">
+                <li><a href="Best-3-Days-Pokhara-Tour-Package.html">Nepal(Pokhara)</a></li>
+                <li><a href="Best-3-Days-Kathmandu-Tour-Package.html">Kathamandu</a></li>
+                <li><a href="Best-2-Days-Ayodhya-Tour-Package.html">ayodhya</a></li>
+              </ul>
+                </li>
+                <li class="menu-item-has-children">
+                      <a href="tour.html">Tours</a>
+                      <ul class="sub-menu">
+                        <li><a href="Best-3-Days-Kathmandu-Tour-Package.html"> Kathmandu Tour </a></li>
+                        <li><a href="Best-3-Days-Pokhara-Tour-Package.html"> Pokhara Tour </a></li>
+                        <li><a href="Best-4-days-Manakamana-Tour-Package.html"> Manakamna Tour</a></li>
+                        <li><a href="best-6-days-muktinath-tour-package.html"> muktinath tour</a></li>
+                        <li><a href="Best-6-days-nepal-tour-package.html"> Nepal Tour</a></li>
+                        <a class="view-more" href="tour.html">View More </a>
+                       
+                      </ul>
+                    </li>
+                <li class="menu-item-has-children">
+                  <a href="taxi-services.html">taxi services</a>
+          
+                </li>
+                <li class="menu-item-has-children">
+               <a href="about.html">about</a>
+                </li>
+                <li>
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="logo d-lg-none">
+              <a href="index.html"
+                ><img src="assets/img/logo.svg" alt="Carmax" class="logo"
+              /></a>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-auto col-auto">
+            <div class="header-wc style2">
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="6"
+                height="39"
+                viewBox="0 0 6 39"
+                fill="none"
+              >
+                <rect
+                  x="5"
+                  width="1"
+                  height="39"
+                  fill="#D9D9D9"
+                  fill-opacity="0.7"
+                ></rect>
+                <rect
+                  y="9"
+                  width="1"
+                  height="20"
+                  fill="#D9D9D9"
+                  fill-opacity="0.7"
+                ></rect>
+              </svg>
+              <div class="logo d-none d-sm-block">
+                <a href="contact.html" class="vs-btn style10">
+                  <span>let’s plan</span>
+                </a>
+              </div>
+              <div class="logo d-sm-none">
+                <a href="index.html"
+                  ><img src="assets/img/logo.svg" alt="Carmax" class="logo"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =================
+    	Main Section Wrapper
+  	================= -->
+    <main class="main">
+      <!--================= Header Area =================-->
+      <header class="vs-header layout2">
+        <!-- Main Menu Area -->
+        <div class="sticky-wrapper position-relative">
+          <div class="header-top-wrap">
+            <div class="container custom-container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="header-top">
+                    <div
+                      class="row g-3 justify-content-between align-items-center"
+                    >
+                      <div class="col-md-6 d-none d-md-block">
+                        <div class="contact-info">
+                          <ul class="custom-ul">
+                            <li>
+                              <i class="fa-solid fa-phone-volume"></i>
+                              <a href="tel:+13334568890">+1 333.456.8890</a>
+                            </li>
+                            <li>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="4"
+                                height="22"
+                                viewBox="0 0 4 22"
+                                fill="none"
+                              >
+                                <line
+                                  x1="0.75"
+                                  y1="2.774e-08"
+                                  x2="0.749999"
+                                  y2="21.6114"
+                                  stroke="white"
+                                  stroke-opacity="0.3"
+                                  stroke-width="1.5"
+                                />
+                                <line
+                                  x1="3.5"
+                                  y1="3.92926"
+                                  x2="3.5"
+                                  y2="17.682"
+                                  stroke="white"
+                                  stroke-opacity="0.3"
+                                />
+                              </svg>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-envelope"></i>
+                              <a href="mailto:info@example.com">
+                                info@example.com
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="social-share">
+                          <span class="info-share">Follow on:</span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="4"
+                            height="22"
+                            viewBox="0 0 4 22"
+                            fill="none"
+                          >
+                            <line
+                              x1="0.75"
+                              y1="2.774e-08"
+                              x2="0.749999"
+                              y2="21.6114"
+                              stroke="white"
+                              stroke-opacity="0.3"
+                              stroke-width="1.5"
+                            />
+                            <line
+                              x1="3.5"
+                              y1="3.92941"
+                              x2="3.5"
+                              y2="17.6821"
+                              stroke="white"
+                              stroke-opacity="0.3"
+                            />
+                          </svg>
+                          <ul class="custom-ul">
+                            <li>
+                              <a href="https://x.com/" target="_blank">
+                                <i class="fa-brands fa-x-twitter"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.facebook.com/"
+                                target="_blank"
+                              >
+                                <i class="fab fa-facebook-f"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.linkedin.com/"
+                                target="_blank"
+                              >
+                                <i class="fab fa-linkedin-in"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-bottom">
+            <div class="container custom-container">
+              <div class="row justify-content-between align-items-center">
+                <div class="col-xl-3 col-lg-auto">
+                  <div
+                    class="header-logo d-flex justify-content-between align-items-center"
+                  >
+                    <a href="index.html"
+                      ><img
+                        src="assets/img/logo-v2.svg"
+                        alt="Luxrio"
+                        class="logo"
+                    /></a>
+                    <div class="d-flex align-items-center gap-3">
+
+                      <button
+                        class="vs-menu-toggle style2 d-inline-block d-lg-none"
+                      >
+                        <i class="fal fa-bars"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                class="col-xl-9 col-lg-auto d-none d-lg-flex justify-content-end gap-md-4 gap-xl-5"
+              >
+                <nav class="main-menu menu-style1 d-none d-lg-block">
+               <ul class="d-flex justify-content-center align-items-center">
+                    <li class="menu-item-has-children">
+                      <a href="index.html" style="color: #333;">Home</a>
+              
+                    </li>
+                    <li class="menu-item-has-children">
+                      <a href="#" style="color: #333;">Destinations</a>
+                     <ul class="sub-menu">
+                <li><a href="Best-3-Days-Pokhara-Tour-Package.html">Nepal(Pokhara)</a></li>
+                <li><a href="Best-3-Days-Kathmandu-Tour-Package.html">Kathamandu</a></li>
+                <li><a href="Best-2-Days-Ayodhya-Tour-Package.html">ayodhya</a></li>
+              </ul>
+                    </li>
+                     <li class="menu-item-has-children">
+                      <a href="tour.html" style="color: #333;">Tours</a>
+                      <ul class="sub-menu">
+                        <li><a href="Best-3-Days-Kathmandu-Tour-Package.html"> Kathmandu Tour </a></li>
+                        <li><a href="Best-3-Days-Pokhara-Tour-Package.html"> Pokhara Tour </a></li>
+                        <li><a href="Best-4-days-Manakamana-Tour-Package.html"> Manakamna Tour</a></li>
+                        <li><a href="best-6-days-muktinath-tour-package.html"> muktinath tour</a></li>
+                        <li><a href="Best-6-days-nepal-tour-package.html"> Nepal Tour</a></li>
+                        <a class="view-more" href="tour.html">View More </a>
+                       
+                      </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                      <a href="taxi-services.html" style="color: #333;">taxi services</a>
+                 
+                    </li>
+                    <li>
+                   <a href="about.html" style="color: #333;">about</a>
+                    </li>
+                    <li>
+                      <a href="contact.html" style="color: #333;">Contact</a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="header-wc style2">
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="6"
+                    height="39"
+                    viewBox="0 0 6 39"
+                    fill="none"
+                  >
+                    <rect
+                      x="5"
+                      width="1"
+                      height="39"
+                      fill="#D9D9D9"
+                      fill-opacity="0.7"
+                    />
+                    <rect
+                      y="9"
+                      width="1"
+                      height="20"
+                      fill="#D9D9D9"
+                      fill-opacity="0.7"
+                    />
+                  </svg>
+                 <a href="contact.html" class="vs-btn style8">
+                    <span>let’s plan</span>
+                  </a>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--================= Header Area end =================-->
+
+      <!--================= Breadcrumb Area start =================-->
+<section class="vs-breadcrumb" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.pexels.com/photos/14352134/pexels-photo-14352134.jpeg?auto=compress&cs=tinysrgb&w=1200'); background-size: cover; padding: 120px 0;">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12">
+                <div class="breadcrumb-content">
+                    <span style="color: #ff5e00; font-weight: 700; text-transform: uppercase; letter-spacing: 3px;">Nepal Nature Retreat</span>
+                    <h1 class="breadcrumb-title" style="font-size: clamp(2rem, 5vw, 3.5rem); color: #fff;">3 Days Pokhara Tour Package from Gorakhpur</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="vs-destination-details space-top space-extra-bottom bg-theme-07">
+    <div class="container">
+        <div class="row gx-3 gx-xl-5 gy-5">
+            <div class="col-lg-8">
+                <div class="vs-destination-single">
+                    
+                    <div class="premium-header-card mb-4" style="background: linear-gradient(145deg, rgba(255,255,255,0.95) 0%, rgba(248,250,252,0.9) 100%); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.3); border-radius: 24px; padding: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.08); position: relative; overflow: hidden;">
+                        <div class="premium-bg-pattern" style="position: absolute; top: -50%; right: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(255,94,0,0.03) 0%, transparent 70%); pointer-events: none;"></div>
+                        <div class="d-flex justify-content-between align-items-start mb-3 position-relative">
+                            <div class="flex-grow-1 pe-2">
+                                <div class="title-wrapper" style="position: relative;">
+                                    <h2 class="destination-single-title" style="font-weight: 800; margin-bottom: 0; font-size: clamp(1.3rem, 4vw, 2rem); line-height: 1.2; background: linear-gradient(135deg, #1e293b 0%, #ff5e00 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Scenic Pokhara Road Journey</h2>
+                                    <div class="title-underline" style="width: 50px; height: 3px; background: linear-gradient(90deg, #ff5e00, #ff8c42); border-radius: 2px; margin-top: 6px;"></div>
+                                </div>
+                            </div>
+                            <div class="destination-single-meta flex-shrink-0 premium-days-badge" style="background: linear-gradient(135deg, #ff5e00 0%, #ff7a2b 50%, #ff9100 100%); color: #fff; padding: 12px 16px; border-radius: 20px; text-align: center; min-width: 65px; box-shadow: 0 8px 25px rgba(255,94,0,0.4); backdrop-filter: blur(15px); position: relative; overflow: hidden;">
+                                <div class="badge-shine" style="position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent); transform: rotate(45deg); animation: shine 3s infinite;"></div>
+                                <h3 class="mb-0 text-white position-relative" style="font-size: 22px; line-height: 1; font-weight: 900; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">3</h3>
+                                <span class="position-relative" style="font-size: 9px; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; opacity: 0.9;">days</span>
+                            </div>
+                        </div>
+                        <div class="pickup-info-premium d-inline-flex align-items-center" style="background: linear-gradient(135deg, rgba(255,94,0,0.08) 0%, rgba(255,140,66,0.05) 100%); border: 2px solid rgba(255,94,0,0.15); color: #ff5e00; padding: 12px 16px; border-radius: 25px; font-size: 13px; font-weight: 600; backdrop-filter: blur(15px); box-shadow: 0 6px 20px rgba(255,94,0,0.1); position: relative; overflow: hidden;">
+                            <div class="pickup-glow" style="position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,94,0,0.1), transparent); transition: left 0.6s ease;"></div>
+                            <span class="d-inline-flex align-items-center justify-content-center me-2" style="width: 30px; height: 30px; background: linear-gradient(135deg, #ff5e00, #ff7a2b); border-radius: 50%; box-shadow: 0 3px 8px rgba(255,94,0,0.3); flex-shrink: 0;">
+                                <i class="fas fa-map-marker-alt text-white" style="font-size: 12px;"></i>
+                            </span>
+                            <span>Pickup & Drop: Gorakhpur Railway Station / City</span>
+                        </div>
+                    </div>
+
+                    <div class="destination-single-info">
+                        <figure class="destination-single-img mb-4 shadow-lg" style="border-radius: 30px; overflow: hidden;">
+                            <img src="assets/img/tour img/nepal3.jpg" alt="Pokhara Phewa Lake" class="w-100" />
+                        </figure>
+
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-4 col-12">
+                                <div class="premium-gallery-item rounded-4 overflow-hidden shadow-lg position-relative">
+                                    <img src="assets/img/tour img/pokhara5.jpg" alt="Pokhara Mountains" class="w-100" style="height: 200px; object-fit: cover; transition: transform 0.3s ease;" />
+                                    <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-3" style="background: linear-gradient(transparent, rgba(0,0,0,0.6)); opacity: 0; transition: opacity 0.3s ease;">
+                                        <span class="text-white fw-bold">Himalayan Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <div class="premium-gallery-item rounded-4 overflow-hidden shadow-lg position-relative">
+                                    <img src="assets/img/tour img/pokhara2.jpg" alt="Davis Falls" class="w-100" style="height: 200px; object-fit: cover; transition: transform 0.3s ease;" />
+                                    <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-3" style="background: linear-gradient(transparent, rgba(0,0,0,0.6)); opacity: 0; transition: opacity 0.3s ease;">
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <div class="premium-gallery-item rounded-4 overflow-hidden shadow-lg position-relative">
+                                    <img src="assets/img/tour img/pokhara4.jpg" alt="Phewa Lake Boating" class="w-100" style="height: 200px; object-fit: cover; transition: transform 0.3s ease;" />
+                                    <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-3" style="background: linear-gradient(transparent, rgba(0,0,0,0.6)); opacity: 0; transition: opacity 0.3s ease;">
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-4 mb-5">
+                            <div class="col-md-3 col-6">
+                                <div class="premium-info-card text-center h-100 shadow-sm p-3 bg-white border-radius-15" style="border-bottom: 3px solid #ff5e00;">
+                                    <i class="fas fa-bus text-theme mb-2" style="font-size: 24px;"></i>
+                                    <span class="info-label d-block small text-muted">Travel Mode</span>
+                                    <h6 class="info-value mb-0">Car / AC Bus</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="premium-info-card text-center h-100 shadow-sm p-3 bg-white border-radius-15" style="border-bottom: 3px solid #ff5e00;">
+                                    <i class="fas fa-wallet text-theme mb-2" style="font-size: 24px;"></i>
+                                    <span class="info-label d-block small text-muted">Budget</span>
+                                    <h6 class="info-value mb-0">Friendly</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="premium-info-card text-center h-100 shadow-sm p-3 bg-white border-radius-15" style="border-bottom: 3px solid #ff5e00;">
+                                    <i class="fas fa-mountain text-theme mb-2" style="font-size: 24px;"></i>
+                                    <span class="info-label d-block small text-muted">Suitable</span>
+                                    <h6 class="info-value mb-0">Couples & Groups</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="premium-info-card text-center h-100 shadow-sm p-3 bg-white border-radius-15" style="border-bottom: 3px solid #ff5e00;">
+                                    <i class="fas fa-road text-theme mb-2" style="font-size: 24px;"></i>
+                                    <span class="info-label d-block small text-muted">Journey</span>
+                                    <h6 class="info-value mb-0">Short Road Trip</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-ssmg mb-5">
+                            <h3 class="h4 border-start border-4 border-theme ps-3 mb-4">Tour Overview</h3>
+                            <p style="font-size: 16px; line-height: 1.8; color: #444;">SSMG Travels, Gorakhpur ke saath <b>Pokhara</b> ka ek chhota lekin yaadgar road tour enjoy karein. Yeh 3 din ka Pokhara tour package un travelers ke liye best hai jo bina flight, sirf road journey ke madhyam se Nepal ki natural beauty dekhna chahte hain. Pokhara apni Phewa Lake, pahadon ke nazare, shant environment aur adventure vibes ke liye mashhoor hai.</p>
+                            
+                            <h5 class="mt-4 mb-3 text-theme">Tour Highlights:</h5>
+                            <ul class="custom-ul">
+                                <li><i class="fa-solid fa-circle-arrow-right" style="color: #ff5e00;"></i> Scenic road journey from Gorakhpur to Pokhara valley.</li>
+                                <li><i class="fa-solid fa-circle-arrow-right" style="color: #ff5e00;"></i> Phewa Lake boating & mountain views from natural viewpoints.</li>
+                                <li><i class="fa-solid fa-circle-arrow-right" style="color: #ff5e00;"></i> Peaceful & nature-friendly destination perfect for family and couples.</li>
+                                <li><i class="fa-solid fa-circle-arrow-right" style="color: #ff5e00;"></i> Most affordable and time-saving short Nepal tour package.</li>
+                            </ul>
+                        </div>
+
+                        <div class="destination-info-tabs mb-4">
+                            <ul class="nav nav-tabs border-0 bg-white p-2 shadow-sm rounded-pill justify-content-center" id="tourTab" role="tablist">
+                                <li class="nav-item"><a class="nav-link active rounded-pill px-4" data-bs-toggle="tab" href="#itinerary">Day-wise Itinerary</a></li>
+                                <li class="nav-item"><a class="nav-link rounded-pill px-4" data-bs-toggle="tab" href="#cost">Inclusions</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-content" id="tourTabContent">
+                            <div class="tab-pane fade show active" id="itinerary">
+                                <div class="itinerary-timeline-wrap mt-4">
+                                    <div class="p-4 bg-white border-radius-20 shadow-sm mb-4 border-start border-5 border-theme">
+                                        <h5 class="text-theme">Day 01: Gorakhpur → Pokhara</h5>
+                                        <p class="mb-0">Subah Gorakhpur se pickup. Sonauli border ke through Nepal entry. Scenic road journey ke baad shaam ko Pokhara pahunchna. Hotel check-in aur evening free. Overnight stay in Pokhara.</p>
+                                    </div>
+                                    <div class="p-4 bg-white border-radius-20 shadow-sm mb-4 border-start border-5 border-theme">
+                                        <h5 class="text-theme">Day 02: Pokhara Sightseeing</h5>
+                                        <p class="mb-0">Subah Pokhara local sightseeing – Phewa Lake boating, Tal Barahi Temple, Davis Falls, Gupteshwar Mahadev Cave aur natural viewpoints. Shaam ko lakeside market me free time. Overnight stay in Pokhara.</p>
+                                    </div>
+                                    <div class="p-4 bg-white border-radius-20 shadow-sm border-start border-5 border-theme">
+                                        <h5 class="text-theme">Day 03: Pokhara → Gorakhpur Departure</h5>
+                                        <p class="mb-0">Subah return journey start. Border formalities ke baad shaam ko Gorakhpur drop. Tour yahin samapt hota hai.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="cost">
+                                <div class="row g-4 mt-2">
+                                    <div class="col-md-6">
+                                        <div class="p-4 border-radius-20 h-100" style="background: #f0fff4; border: 1px solid #c6f6d5;">
+                                            <h5 class="text-success mb-3"><i class="fas fa-check-circle me-2"></i>What’s Included</h5>
+                                            <ul class="list-unstyled small">
+                                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Pickup & Drop from Gorakhpur</li>
+                                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Road Transportation (Car/Bus)</li>
+                                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Sightseeing as per Itinerary</li>
+                                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Driver Allowance, Fuel & Toll</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="p-4 border-radius-20 h-100" style="background: #fff5f5; border: 1px solid #fed7d7;">
+                                            <h5 class="text-danger mb-3"><i class="fas fa-times-circle me-2"></i>What’s Not Included</h5>
+                                            <ul class="list-unstyled small">
+                                                <li class="mb-2"><i class="fas fa-times text-danger me-2"></i>Hotel Accommodations & Meals</li>
+                                                <li class="mb-2"><i class="fas fa-times text-danger me-2"></i>Entry Tickets & Boating Charges</li>
+                                                <li class="mb-2"><i class="fas fa-times text-danger me-2"></i>Nepal Permit / ID Charges</li>
+                                                <li class="mb-2"><i class="fas fa-times text-danger me-2"></i>Personal Expenses</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="sidebar-area tours-sidebar">
+                    <div class="widget" style="padding: 0; border-radius: 30px; overflow: hidden; border: none; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.15);">
+                        <div class="p-4 text-center" style="background: linear-gradient(135deg, #1a1a1a 0%, #444 100%);">
+                            <h4 class="text-white mb-1">Inquire Now</h4>
+                            <p class="text-theme small fw-bold mb-0">Pokhara Nature Specialist from Gorakhpur</p>
+                        </div>
+                        <div class="p-4 bg-white">
+                            <form id="ssmgBookingForm" action="https://api.web3forms.com/submit" method="POST">
+                                <input type="hidden" name="access_key" value="359e5bba-ed19-442c-8cea-168eb0039b5c">
+                                <div class="mb-3">
+                                    <input type="text" name="name" class="form-control py-3 rounded-3 shadow-none border-light" placeholder="Your Full Name" required style="background: #f8f9fa;">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" name="phone" class="form-control py-3 rounded-3 shadow-none border-light" placeholder="WhatsApp Number" required style="background: #f8f9fa;">
+                                </div>
+                                <div class="mb-3">
+                                    <select name="vehicle" class="form-select py-3 rounded-3 shadow-none border-light" style="background: #f8f9fa;">
+                                        <option selected disabled>Preferred Vehicle Type</option>
+                                        <option>Swift Dzire (4 Seater)</option>
+                                        <option>Innova Crysta (7 Seater)</option>
+                                        <option>Scorpio / Bolero</option>
+                                        <option>Tempo Traveller (13-26 Seater)</option>
+                                        <option>AC Bus / Tourist Bus</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="vs-btn style9 w-100 py-3 rounded-3 shadow-lg" style="background: linear-gradient(135deg, #ff5e00 0%, #ff9100 100%); border:none;">Get Best Quote</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="widget mt-4 bg-white p-4 border-radius-20 shadow-sm border-top border-5 border-theme">
+                        <div class="d-flex align-items-center mb-3 pb-3 border-bottom border-light">
+                            <div class="me-3 bg-theme-light p-3 rounded-circle" style="background: rgba(255, 94, 0, 0.1); width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-mountain text-theme" style="font-size: 20px;"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0" style="font-weight: 700;">Nature Tour</h6>
+                                <p class="small mb-0 text-muted">Himalayan View Expert</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="me-3 bg-theme-light p-3 rounded-circle" style="background: rgba(255, 94, 0, 0.1); width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-check-double text-theme" style="font-size: 20px;"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0" style="font-weight: 700;">SSMG Travels</h6>
+                                <p class="small mb-0 text-muted">Trusted Road Expedition Partner</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+    <!-- ================= Footer Start ================= -->
+     <footer
+      class="vs-footer-style1"
+      data-bg-src="assets/img/footer/footer-style1-bg.png"
+    >
+      <div class="footer-top space-top">
+        <div class="container">
+          <div class="row gx-4">
+            <div class="col-12">
+              <div
+                class="footer-cta bg-third-theme-color fade-anim"
+                data-bg-src="assets/img/footer/footer-cta-bg.png"
+              >
+                <div class="row g-4 align-items-center">
+                  <div class="col-lg-8">
+                    <div class="cta-contact-items">
+                      <div class="contact-item">
+                        <span class="icon">
+                          <i class="fa-light fa-location-dot"></i>
+                        </span>
+                        <div class="info">
+                          <h5 class="info-title text-white-color">Location</h5>
+                          <p>Shahpur near Vimal montessori school, pipraich Road, gita vatika, Gorakhpur - 273006</p>
+                        </div>
+                      </div>
+                      <div class="contact-item">
+                        <span class="icon">
+                          <i class="fa-sharp fa-light fa-phone-rotary"></i>
+                        </span>
+                        <div class="info">
+                          <h5 class="info-title text-white-color">
+                            Contact Us
+                          </h5>
+                          <p>
+                            <a href="mailto:info@example.com"
+                              >Info@example.com</a
+                            >
+                            <a href="tel:+123456789">+917380708008</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-4 d-flex justify-content-center justify-content-lg-end btn-trigger btn-bounce"
+                  >
+                    <a href="contact.html" class="vs-btn style6">
+                      <span>booking now</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-center space-extra">
+        <div class="container">
+          <div class="row gx-4 gy-4 gx-xl-2 justify-content-between">
+            <div class="col-md-6 col-lg-4 col-xl-4">
+              <div class="footer-widgets">
+                <a href="index.html" class="logo">
+                  <img src="assets/img/logo.svg" alt="logo" />
+                </a>
+                <div class="social-media">
+                  <ul class="custom-ul">
+                    <li>
+                      <a href="https://www.facebook.com/" target="_blank"
+                        ><i class="fa-brands fa-facebook-f"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="https://x.com/" target="_blank"
+                        ><i class="fa-brands fa-x-twitter"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/" target="_blank"
+                        ><i class="fa-brands fa-instagram"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/" target="_blank"
+                        ><i class="fa-brands fa-youtube"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+
+                <p class="mt-4 mb-3 text-color-5">
+                  Stay connected for future updates.
+                </p>
+                <!--<div class="newsletter">
+                  <form action="https://html.vecurosoft.com/tripix/tripix-demo/index.html" class="w100">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Enter Email Address"
+                    />
+                    <button type="submit" class="text-uppercase text-color-5">
+                      <i class="fa-solid fa-angles-right"></i>
+                      <span>Subscribe now</span>
+                    </button>
+                  </form>
+                </div>-->
+              </div>
+            </div>
+            <div class="col-lg-5 col-xl-4 order-md-3 order-lg-2">
+              <div class="footer-widgets">
+                <h5 class="widgets-title text-white-color text-capitalize">
+                  Useful Links
+                </h5>
+                <div class="row gx-xl-2 g-2">
+                  <div class="col-md-6">
+                    <div class="footer-links">
+                      <ul class="custom-ul">
+                        <li>
+                         <a href="index.html">
+                            <i class="fa-solid fa-angles-right"></i>
+                            Home
+                          </a>
+                        </li>
+                        
+                        <li>
+                          <a href="about.html">
+                            <i class="fa-solid fa-angles-right"></i>
+                       About Us
+                          </a>
+                        </li>
+                        <li>
+                          <a href="contact.html">
+                            <i class="fa-solid fa-angles-right"></i>
+                            Contact
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="footer-links">
+                      <ul class="custom-ul">
+                        <li>
+                          <a href="tour.html">
+                            <i class="fa-solid fa-angles-right"></i>
+                            Popular Destination
+                          </a>
+                        </li>
+                        <li>
+                          <a href="taxi-services.html">
+                            <i class="fa-solid fa-angles-right"></i>
+                            Taxi Services
+                          </a>
+                        </li>
+                        <li>
+                          <a href="tour.html">
+                            <i class="fa-solid fa-angles-right"></i>
+                           Tour Packages
+                          </a>
+                        </li>
+                       
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 col-xl-3 order-md-2 order-lg-3">
+              <div class="footer-widgets">
+                <h5 class="widgets-title text-white-color text-capitalize">
+                  instagram
+                </h5>
+                <div class="instagram">
+                  <a href="https://www.instagram.com/" target="_blank">
+                    <img
+                      src="assets/img/instagram-post/instagram-1.png"
+                      alt="instagram-1"
+                      class="w-100"
+                    />
+                  </a>
+                  <a href="https://www.instagram.com/" target="_blank">
+                    <img
+                      src="assets/img/instagram-post/instagram-2.png"
+                      alt="instagram-2"
+                      class="w-100"
+                    />
+                  </a>
+                  <a href="https://www.instagram.com/" target="_blank">
+                    <img
+                      src="assets/img/instagram-post/instagram-3.png"
+                      alt="instagram-3"
+                      class="w-100"
+                    />
+                  </a>
+                  <a href="https://www.instagram.com/" target="_blank">
+                    <img
+                      src="assets/img/instagram-post/instagram-4.png"
+                      alt="instagram-4"
+                      class="w-100"
+                    />
+                  </a>
+                  <a href="https://www.instagram.com/" target="_blank">
+                    <img
+                      src="assets/img/instagram-post/instagram-5.png"
+                      alt="instagram-5"
+                      class="w-100"
+                    />
+                  </a>
+                  <a href="https://www.instagram.com/" target="_blank">
+                    <img
+                      src="assets/img/instagram-post/instagram-6.png"
+                      alt="instagram-6"
+                      class="w-100"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom bg-third-theme-color">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 order-2 order-md-1">
+              <!--<p class="footer-copyright text-center text-md-start">
+                © <span class="current-year"></span>
+                <a
+                  href="index.html"
+                  title="Develop by Vecuro"
+                  class="text-theme-color"
+                  >Tripix</a
+                >, All Rights Reserved by <a href="https://themeforest.net/user/vecuro_themes/" >Vecuro</a>
+              </p>-->
+              <p class="footer-copyright text-center text-md-start" style="font-size: 10px;">
+                Copyright@ 2025 SSMG Travels
+              </p>
+            </div>
+            <div class="col-md-6 order-1 order-md-2">
+              <p class="footer-copyright text-center text-md-end" style="font-size: 10px;">
+                Developed by
+                <a
+                  href="https://www.shineinfosolutions.in/" title="Develop by"
+                  class="text-theme-color"
+                  >Shine Info solutions</a>
+                 
+              </p>
+            </div>
+            <!--<div class="col-md-6 order-1 order-md-2">
+              <div class="footer-menu">
+                <ul
+                  class="custom-ul justify-content-center justify-content-md-end"
+                >
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="faq.html">Faq’s</a></li>
+                  <li><a href="activities.html">Team</a></li>
+                </ul>
+              </div>
+            </div>-->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ================= Footer End ================= -->
+
+    <!-- ================= Main Section Wrapper End ================= -->
+    <a href="#" class="scrollToTop scroll-btn"
+      ><i class="far fa-arrow-up"></i
+    ></a>
+    <!-- ***************** Code End  Here ***************** -->
+    <!--================= All Js File ================= -->
+    <!-- Jquery -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <!-- Jquery UI -->
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <!-- Jquery UI -->
+    <script src="assets/js/moment.min.js"></script>
+    <!-- Jquery UI -->
+    <script src="assets/js/daterangepicker.min.js"></script>
+    <!-- Swiper Slider -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- WOW.js Animation -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Image Loaded Jquery -->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <!-- Odometer JS -->
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/viewport.jquery.js"></script>
+    <!-- Gsap -->
+    <script src="assets/js/gsap.min.js"></script>
+    <!-- ScrollTrigger -->
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <!-- ScrollToPlugin -->
+    <script src="assets/js/ScrollToPlugin.min.js"></script>
+    <!-- SplitText -->
+    <script src="assets/js/SplitText.min.js"></script>
+
+    <!-- Main Js File -->
+    <script src="assets/js/main.js"></script>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Form submission functionality
+        const form = document.getElementById('ssmgBookingForm');
+        const messageDiv = document.getElementById('formMessage');
+        
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const button = this.querySelector('button[type="submit"]');
+            
+            button.disabled = true;
+            button.textContent = 'Sending...';
+            messageDiv.style.display = 'none';
+            
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    messageDiv.innerHTML = '<div class="p-3 rounded-3" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; box-shadow: 0 4px 12px rgba(16,185,129,0.3);"><i class="fas fa-check-circle me-2"></i><strong>Success!</strong> Booking request sent. We will contact you within 15 minutes.</div>';
+                    messageDiv.style.display = 'block';
+                    this.reset();
+                    setTimeout(() => {
+                        messageDiv.style.display = 'none';
+                    }, 3000);
+                } else {
+                    messageDiv.innerHTML = '<div class="p-3 rounded-3" style="background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); color: white; box-shadow: 0 4px 12px rgba(239,68,68,0.3);"><i class="fas fa-exclamation-circle me-2"></i><strong>Error!</strong> Please call +917380708008</div>';
+                    messageDiv.style.display = 'block';
+                    setTimeout(() => {
+                        messageDiv.style.display = 'none';
+                    }, 3000);
+                }
+            })
+            .catch(() => {
+                messageDiv.innerHTML = '<div class="p-3 rounded-3" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: white; box-shadow: 0 4px 12px rgba(245,158,11,0.3);"><i class="fas fa-wifi me-2"></i><strong>Network Error!</strong> Please call +917380708008</div>';
+                messageDiv.style.display = 'block';
+                setTimeout(() => {
+                    messageDiv.style.display = 'none';
+                }, 3000);
+            })
+            .finally(() => {
+                button.disabled = false;
+                button.textContent = 'Get Best Quote';
+            });
+        });
+    });
+    </script>
+  </body>
+
+<!-- Mirrored from html.vecurosoft.com/tripix/tripix-demo/destination-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Dec 2025 05:40:56 GMT -->
+</html>
