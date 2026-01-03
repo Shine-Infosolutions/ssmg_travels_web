@@ -195,6 +195,7 @@ input:focus {
 img:not([draggable]),
 embed,
 object,
+
 video {
   max-width: 100%;
   height: auto;
